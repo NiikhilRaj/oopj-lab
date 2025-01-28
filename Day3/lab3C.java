@@ -10,6 +10,7 @@ public class lab3C {
         int breadth= scan.nextInt();
         Rectangle rectangle = new Rectangle(length, breadth);
         rectangle.display();
+        scan.close();
     }
 }
 class Rectangle{

@@ -13,6 +13,7 @@ class Number {
         for (int i = 0; i < n; i++) {
             numbers[i] = scanner.nextInt();
         }
+        scanner.close();
     }
 
     public void swap() {

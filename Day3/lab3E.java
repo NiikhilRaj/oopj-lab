@@ -5,13 +5,11 @@ public class lab3E{
         Scanner scan = new Scanner(System.in);
     System.out.println("Enter whose area to calculate: \n1.circle\n2.triangle\n3.square");
     int choice= scan.nextInt();
-    double area;
         switch(choice){
             case 1:
                 System.out.println("Enter radius:");
                 double radius = scan.nextDouble();
-                area= area(radius);
-                System.out.println("Area is: "+ area);
+                System.out.println("Area is: "+ area(radius));
                 break;
             case 2:
                 System.out.println("Enter base: ");
@@ -29,6 +27,7 @@ public class lab3E{
                 System.out.println("Invalid choice.");
                 break;
         }
+        scan.close();
     }
     public static double area(double base, double height){
         return ((1/2)*base*height);
