@@ -7,6 +7,7 @@ public class lab6B {
         double n = sc.nextDouble();
         try {
             Number num = new Number(n);
+            System.out.println("Le number: "+ n);
         } catch (NegativeNumberException e) {
             System.out.println("Error Type: NegativeNumberException");
             System.out.println("Error Message: " + e.message);
